@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-dars</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="site-nav flex">
+            <a class="logo link" href="/">
+                <img src="./img/logocha.png" alt=""><img src="./img/logo.png" alt=""> 
+            </a>
+            <ul class="nav-list flex">
+                <li class="nav-link">
+                    <a class="link" href="/">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="/">Features</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="/">Community</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="/">Blog</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="/">Pricing</a>
+                </li>
+            </ul>
+            <button class="start btn">Register Now -></button>
+        </nav>
+        <div class="hero-color">
+        <section class="hero flex">
+            <div class="hero-content">
+                <h2 class="hero-title">Lessons and insights <br><span id="title1"> from 8 years </span></h2>
+
+                <p class="hero-subtitle">Where to grow your business as a photographer: site or social media?</p>
+                <button class="start btn">Register</button>
+            </div>
+            <div class="hero-img">
+                <div class="img1">
+                    <img src="./img/img1.png" alt="">
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <section class="page2 flex">
+            <div class="page2__context">
+                <h2 class="h2title">{{page2_title}}</h2>
+                <p class="paragraps">{{page2_paragraph1}}</p>
+            </div>
+        </section>
+        <div class="logos flex">
+            <div class="client">
+                <img src="./img/Logo1.png" alt="">
+            </div>
+            <div class="client">
+                <img src="./img/Logo2.png" alt="">
+            </div>
+            <div class="client">
+                <img src="./img/Logo3.png" alt="">
+            </div>
+            <div class="client">
+                <img src="./img/Logo4.png" alt="">
+            </div>
+            <div class="client">
+                <img src="./img/Logo5.png" alt="">
+            </div>
+            <div class="client">
+                <img src="./img/Logo6.png" alt="">
+            </div>
+            <div class="client">
+                <img src="./img/Logo7.png" alt="">
+            </div>
+        </div>
+
+        <section class="page3">
+                    <div class="page3_context1">
+                        <h2 class="h2title">Manage your entire community <br> in a single system</h2>
+                        <p class="paragraps">{{page3_paragraph1}}</p>
+                    </div> 
+                    <div class=" members_main flex">
+                        <div class="members">
+                            <img src="./img/Icon1.png" alt="">
+                            <h3 class="member_h3">Membership <br> Organisations </h3>
+                            <p>Our membership management software provides full automation of membership renewals and payments</p>
+                        </div>
+                        <div class="members">
+                            <img src="./img/Icon2.png" alt="">
+                            <h3 class="member_h3">National Associations</h3>
+                            <p>Our membership management software provides full automation of membership renewals and payments</p>
+                        </div>
+                        <div class="members">
+                            <img src="./img/Icon3.png" alt="">
+                            <h3 class="member_h3">Clubs And Groups</h3>
+                            <p>Our membership management software provides full automation of membership renewals and payments</p>
+                        </div>
+                    </div>
+        </section>
+
+        <section class="page4 flex">
+            <div class="page4_img">
+                <img src="./img/rasm3.png" alt="">
+            </div>
+            <div class="page4_content">
+                <h2>The unseen of spending three years at Pixelgrade</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+            </div>
+        </section>
+            <!-- QUESTIONS -->
+    <!-- <section class="question">
+        <div class="question__info w-half">
+          <div class="box">
+            <span>Start your journey!</span>
+            <h2>How to Get My Room?</h2>
+            <p>
+              You can contact us by phone or email us. Easily tap the contact
+              button below and it will take you to our contact point
+            </p>
+            <div class="actions">
+              <button class="btn">Contact us</button>
+              <a href="#" class="link">Explore more room</a>
+            </div>
+          </div>
+        </div>
+        <div class="question__ask w-half">
+          <div class="question-box">
+            <div class="title">
+              <h3>Choose a room and date</h3>
+              <i class="bx bxs-chevron-down-circle"></i>
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="title">
+              <h3>Choose a room and date</h3>
+              <i class="bx bxs-chevron-down-circle"></i>
+            </div>
+            <p class="content">
+              Contact us via phone or email, ask for availability of you choice of
+              room. We might offer you something exciting.
+            </p>
+          </div>
+          <div class="question-box">
+            <div class="title">
+              <h3>Choose a room and date</h3>
+              <i class="bx bxs-chevron-down-circle"></i>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+    <script>
+        const { createApp, ref } = Vue;
+
+        createApp({
+            setup(){
+                const siteLogo = ref('Cootels');
+                const page2_title = ref('Our Clients')
+                const page2_paragraph1 = ref('We have been working with some Fortune 500+ clients')
+                const page3_paragraph1 = ref("Who is Nextcent suitable for?")
+                const page3_title2 = ref("Manage your entire community in a single system")
+                const page3_paragraph2 = ref("We served 100% organic, low process and delicious food. We allow our guest to have breakfast or dinner request.What ever made your taste buds happy.")
+                const page4_main_title = ref("Many Rooms to     Choose")
+                const page4_main_p = ref("There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience")
+                const learn_more = ref("Learn More ->")
+                const single_room = ref("Single Room")
+                const single_room_p = ref("")
+                const double_room = ref("Double Room")
+                const double_room_p = ref("")
+                const cootage = ref("Cootage")
+                const cootage_p = ref("")
+                return {
+                    siteLogo,
+                    page2_title,
+                    page2_paragraph1,
+                    page3_paragraph1,
+                    page3_title2,
+                    page3_paragraph2,
+                    page4_main_title,
+                    page4_main_p,
+                    learn_more,
+                    single_room,
+                    single_room_p,
+                    double_room,
+                    double_room_p,
+                    cootage,
+                    cootage_p
+                }
+            }
+        }).mount('#app')
+
+    </script>
+</body>
+</html>
